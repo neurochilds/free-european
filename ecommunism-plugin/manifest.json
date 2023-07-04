@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "ecommunism",
+    "version": "1.0",
+    "description": "Bypass economist paywall",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.economist.com/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
