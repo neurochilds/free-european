@@ -23,15 +23,11 @@ const unlock = () => {
         console.log('Unlock failed.')
     }
     
-    // Rmove the element containing the subscription advert 
+    // Remove the element containing the subscription advert 
     const subscriptionAdvert = document.querySelector('.pp-subs-paywall');
     if (subscriptionAdvert) {
-        console.log('subscriptionAdvert found.')
         subscriptionAdvert.remove();
-        console.log('subscriptionAdvert removed.')
-    } else {
-        console.log('subscriptionAdvert not found.')
-    }
+    } 
 }
 
 // Wait 1000ms to ensure the page content is fully loaded before unlocking the page
