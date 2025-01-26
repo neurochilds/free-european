@@ -1,15 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "ecommunism",
+    "name": "free-european",
     "version": "1.0",
-    "description": "Bypass economist paywall",
+    "description": "Bypass new european paywall",
     "permissions": [
       "activeTab"
     ],
     "content_scripts": [
       {
         "matches": [
-          "https://www.economist.com/*"
+          "https://www.theneweuropean.co.uk/*"
         ],
         "js": [
           "content.js"
