@@ -12,7 +12,7 @@ const unlock = () => {
 
     // Create empty paragraph
     const emptyPara = document.createElement('p');
-    emptyPara.innerHTML = '<br><br><br>';
+    emptyPara.innerHTML = '<br><br>';
 
     // Inject the content of the hidden element into the content of the shown element.
     // Add empty para to the end to prevent the gradient at the bottom of the element from obscuring the final paragraph of text. 
@@ -26,7 +26,11 @@ const unlock = () => {
     // Rmove the element containing the subscription advert 
     const subscriptionAdvert = document.querySelector('.view-offer');
     if (subscriptionAdvert) {
-      subscriptionAdvert.remove();
+        console.log('subscriptionAdvert found.')
+        subscriptionAdvert.remove();
+        console.log('subscriptionAdvert removed.')
+    } else {
+        console.log('subscriptionAdvert not found.')
     }
 }
 
