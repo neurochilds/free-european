@@ -24,7 +24,7 @@ const unlock = () => {
     }
     
     // Rmove the element containing the subscription advert 
-    const subscriptionAdvert = document.querySelector('.view-offer');
+    const subscriptionAdvert = document.querySelector('.pp-subs-paywall');
     if (subscriptionAdvert) {
         console.log('subscriptionAdvert found.')
         subscriptionAdvert.remove();
